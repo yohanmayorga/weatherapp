@@ -16,7 +16,6 @@ import ForecastWeatherDetail from "@/components/ForecastWeatherDetail";
 import { useAtom } from "jotai";
 import { loadingCityAtom, placeAtom } from "./atom";
 import { useEffect } from "react";
-import Footer from "@/components/footer";
 
 interface WeatherData {
   cod: string;
@@ -228,7 +227,6 @@ export default function Home() {
           ))}
         </section>
       </main>
-      <Footer />
     </div>
   );
 }
